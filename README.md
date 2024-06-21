@@ -1,4 +1,3 @@
-Here is a revised version with a bit more style:
 
 **Actors Database**
 =====================
