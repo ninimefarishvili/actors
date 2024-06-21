@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Edit Actor</h2>
+<form method="POST">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" class="form-control" value="{{ actor['name'] }}">
+    </div>
+    <div class="form-group">
+        <label for="year">Year</label>
+        <input type="number" id="year" name="year" class="form-control" value="{{ actor['year'] }}">
+    </div>
+    <div class="form-group">
+        <label for="movies">Movies</label>
+        <input type="text" id="movies" name="movies" class="form-control" value="{{ actor['movies'] }}">
+    </div>
+    <div class="form-group">
+        <label for="photo_url">Photo URL</label>
+        <input type="text" id="photo_url" name="photo_url" class="form-control" value="{{ actor['photo_url'] }}">
+    </div>
+    <button type="submit" class="btn btn-primary">Update Actor</button>
+</form>
+{% endblock %}
